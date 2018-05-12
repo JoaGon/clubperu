@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../../../templates/tt-torbara/styles/torbara/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),  
+         url('../../../templates/tt-torbara/styles/torbara/fonts/Gotham-Book.woff') format('woff'), 
+         url('../../../templates/tt-torbara/styles/torbara/fonts/Gotham-Book.ttf')  format('truetype'), 
+         url('../../../templates/tt-torbara/styles/torbara/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	}
+ul {
+	padding: 0;
+	margin: 0;
+	}
+#preview {
+	width: 100%;
+	}
+
+#preview-bar {
+	background: #000;
+	border-bottom: 2px solid #3a3a3a;
+	min-width: 1070px;
+	}
+#bar-inner {
+	max-width: 1070px;
+	margin: 0 auto;
+	padding: 9px 0;
+	overflow: hidden;
+	color: #aba9a9;
+	}
+	#bar-inner li {
+		list-style: none;
+		}
+
+.block {
+	float: left;
+	height: 58px;
+	border-left: 1px solid #474747;
+	padding-left: 20px;
+	}
+	.block.inner {
+		padding-right: 20px;
+		}
+	.block.tm-logo {
+		border: none;
+		padding: 0 20px 0 0;
+		}
+	.block.info {
+		font-family: Tahoma, sans-serif;
+		font-size: 11px;
+		}
+		.block.info ul {
+			max-width: 136px;
+			}
+
+.buy {
+	display: block;
+	width: 176px;
+	height: 33px;
+	padding-top: 11px;
+	margin-top: 6px;
+	background: transparent url(../images/preview/buy-button.png) 0 0 no-repeat;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	color: #FFF;
+	}
+
+#sharer {
+	padding-top: 30px;
+	position: relative;
+	height: 28px;
+	}
+	#sharer li {
+		float: left;
+		max-width: 90px;
+		}
+
+#close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 1px 17px 0 0;
+	background: url(../images/preview/close.png) right top no-repeat;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #777;
+	}
+
+span.old-price {
+	text-decoration: line-through;
+}
+
+.price-cur{
+	color:red;
+}
+
+#fullscreen-preview #preview-wrapper .technical-problems{
+    font-size: 24px;
+    color: #808080;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+}
+#fullscreen-preview #preview-wrapper .technical-problems a{
+    color: #808080 !important;
+    text-decoration: underline !important;
+}
+#fullscreen-preview #preview-wrapper .technical-problems .problems-message{
+     color: #B6B6B6 !important;
+ }
+
+ #tt-preset-selector {
+    padding-left: 15px;
+    float: left;
+    margin-top: 16px;
+ }
+ 
+ #tt-preset-selector .preset {
+	float: left;
+	cursor: pointer;
+}
+
+#tt-preset-selector .preset .image:hover,
+#tt-preset-selector .preset.selected .image {
+    border: 1px solid rgb(204, 204, 204);
+}
+
+#tt-preset-selector .preset .image {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 5px;
+    border: 1px solid rgb(26, 29, 38);
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+    background-size: contain!important;
+}
+
+ 
+.ak-theme-selector {
+    width: 270px;
+    margin-top: 25px;
+    margin-left: 25px;
+ }
+
+#ak-theme-selector {
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+ 
+#ak-theme-selector .select2-container {
+    background-color:  #1a1d26;
+}
+ 
+#ak-theme-selector .select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: 1px solid #484848;
+    border-radius: 4px;
+    font-weight: 700;
+    height: 32px;
+    outline: none;
+}
+
+#ak-theme-selector .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 32px;
+    color: #cacaca;
+    font-weight: 700;
+    font-family: 'Gotham-Book';
+}
+
+.select2-results__option {
+    font-family: 'Gotham-Book';
+    font-size: 14px;
+}
+
+.select2-results__option .ak-tmimg {
+    float: left;
+    margin-right: 5px;
+    width: 19px;
+    margin-top: -3px;
+}
+
+#ak-theme-selector .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 31px;
+}
+
+#fullscreen-preview .select2-dropdown {
+    background-color: #1a1d26;
+    border: 1px solid #484848;
+}
+
+#fullscreen-preview .select2-search--dropdown .select2-search__field {
+    background-color: rgb(41, 43, 49);
+    border-radius: 3px;
+    border-color: #484848!important;
+    outline: none;
+    color: #CACACA;
+}
+
+#fullscreen-preview .select2-container--default .select2-results>.select2-results__options {
+    color: #CACACA;
+}
+
+#fullscreen-preview .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #ddd;
+    color: #1A1D26;
+}
