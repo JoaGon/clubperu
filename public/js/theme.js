@@ -27,7 +27,7 @@ jQuery(function($) {
     });
 
    //GET IN TOUCH!
-    jQuery("#adminForm_1").submit(function() {
+   /* jQuery("#adminForm_1").submit(function() {
 
         if(IsEmail(jQuery("#aics_email").val())){
             var url = "mail.php"; // the mail script
@@ -47,7 +47,7 @@ jQuery(function($) {
         }
         
         return false; // avoid to execute the actual submit of the form.
-    }); 
+    }); */
    
     // Check Email
     function IsEmail(email) {

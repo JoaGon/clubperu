@@ -10130,8 +10130,8 @@ q {
 .tm-logo {
   padding-right: 80px;
   position: relative;
-  transition: 400ms all;
-  -webkit-transition: 400ms all;
+ /* transition: 400ms all;
+  -webkit-transition: 400ms all;*/
   z-index: 3;
 }
 .tm-logo:before {
@@ -10164,13 +10164,13 @@ q {
   margin-top: 15px;
   vertical-align: top;
   display: inline-block;
-  transform: rotate(0);
+/*  transform: rotate(0);
   transition: 400ms all;
-  -webkit-transition: 400ms all;
+  -webkit-transition: 400ms all;*/
 }
 .tm-logo:hover > img {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(360deg);
+/*  -webkit-transform: rotate(180deg);
+  transform: rotate(360deg);*/
 }
 .tm-logo span {
   padding-left: 17px;
@@ -10787,7 +10787,7 @@ q {
   padding-right: 35px;
   text-align: right;
   z-index: 2;
-  max-width: 565px;
+  max-width: 80%;
 }
 .tm-trainers-slider:before {
   content: '';
@@ -10796,9 +10796,7 @@ q {
   left: 0;
   bottom: 0;
   opacity: 0.9;
-  right: -1000%;
   z-index: -1;
-  transform: skew(-33deg);
   display: block;
   background: #534540;
 }
@@ -10807,7 +10805,7 @@ q {
   padding-top: 95px;
   font-size: 38px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ed1c27;
   display: inline-block;
 }
 .trainers-module {
@@ -10839,9 +10837,40 @@ q {
 .trainers-module .name {
   position: absolute;
   font-size: 33px;
-  color: #fff;
+  color: #534540;
   bottom: 0;
-  right: 290px;
+  right: 590px;
+  top: 5px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.trainers-module .name2 {
+  position: absolute;
+  font-size: 14px;
+  color: #534540;
+  bottom: 0;
+  right: 520px;
+  top: 90px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.trainers-module .email {
+  position: absolute;
+  font-size: 14px;
+  color: #534540;
+  bottom: 0;
+  right: 520px;
+  top: 110px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.trainers-module .phone {
+  position: absolute;
+  font-size: 14px;
+  color: #534540;
+  bottom: 0;
+  right: 520px;
+  top: 130px;
   text-transform: uppercase;
   line-height: 35px;
 }
@@ -14454,11 +14483,17 @@ q {
 .product-descr-wrap {
   float: left;
 }
-.product-descr-wrap .old_price {
+/*.product-descr-wrap .old_price {
   padding-right: 10px;
   display: inline-block;
   opacity: 0.5;
   text-decoration: line-through;
+  font-size: 16px;
+}*/
+.product-descr-wrap .old_price {
+  padding-right: 10px;
+  display: inline-block;
+  opacity: 0.5;
   font-size: 16px;
 }
 .product-descr-wrap .prod_price {
@@ -15027,7 +15062,7 @@ table.jshop .button:hover {
   background: none;
 }
 .shop-main-page-wrap {
-  padding: 85px 0 90px 0;
+  padding: 85px 0 40px 0;
   background: url("../images/shop-main-page-bg.jpg") 50% 100% no-repeat;
 }
 .shop-main-page-wrap .shop-title {
@@ -15119,7 +15154,7 @@ table.jshop .button:hover {
   color: #ed1c27;
 }
 .latest_products .block_item .price-wrap {
-  width: 60%;
+  width: 100%;
   background: #534540;
   text-align: left;
   padding-left: 10px;
@@ -15130,9 +15165,13 @@ table.jshop .button:hover {
   display: inline-block;
   vertical-align: top;
 }
-.latest_products .block_item .price-wrap .old_price {
+/*.latest_products .block_item .price-wrap .old_price {
   color: #fff;
   text-decoration: line-through;
+  font-size: 16px;
+}*/
+.latest_products .block_item .price-wrap .old_price {
+  color: #fff;
   font-size: 16px;
 }
 .latest_products .block_item .price-wrap .jshop_price {
@@ -15868,6 +15907,7 @@ ul.uk-switcher {
     clear: both;
     padding: 20px 0 0;
   }
+
   .tm-trainers-slider {
     padding-bottom: 40px;
   }

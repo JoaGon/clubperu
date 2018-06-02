@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing_test');
+});
+
+Route::get('/handball', function () {
+    return view('handball');
 });
 
 Route::auth();
@@ -24,3 +28,20 @@ Route::get('/lading', function () {
     return view('landing');
 });
 
+
+Route::get('/edit_slide', 'SliderController@edit');
+Route::post('/create', 'SliderController@update');
+Route::get('/delete', 'SliderController@delete');
+
+
+
+//::post('/sendEmail', 'HomeController@sendEmail');
+
+Route::get('slides_slider','SliderController@index');
+
+
+
+/********** CMS Slides***********/
+Route::get('new_slide',"SliderController@new_slide");
+Route::get('slides','SliderController@slides');
+Route::post('new_slide_create','SliderController@new_slide_create');

@@ -10,6 +10,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
+use Mail;
+
 /**
  * Class HomeController
  * @package App\Http\Controllers
@@ -35,4 +37,20 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /*public function sendEmail(Request $req)
+    {
+       // dd($req->all());
+        $data = array
+                (
+                'email'     =>  $req->input('email'),
+                'messages'      =>  "hola",
+                'subject'       =>  "hola",
+                );
+        Mail::send('emailTemplate', $data, function ($message) use ($data) {
+            $message->subject("hola");
+            $message->to("joanellygonzalez@gmail.com");
+        });
+         return redirect("/");
+    }*/
 }

@@ -8,7 +8,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
+            <a href="{{ url('/home') }}"><b>Club</b>PERU</a>
         </div><!-- /.login-logo -->
 
     @if (count($errors) > 0)
@@ -23,7 +23,7 @@
     @endif
 
     <div class="login-box-body">
-    <p class="login-box-msg"> {{ trans('adminlte_lang::message.siginsession') }} </p>
+    <p class="login-box-msg"> Iniciar Session </p>
     <form action="{{ url('/login') }}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group has-feedback">
@@ -48,10 +48,8 @@
         </div>
     </form>
 
-    @include('auth.partials.social_login')
-
-    <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
-    <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
+    <a href="{{ url('/password/reset') }}">Olvido su contrasena?</a><br>
+    <a href="{{ url('/register') }}" class="text-center">Registrarse</a>
 
 </div><!-- /.login-box-body -->
 

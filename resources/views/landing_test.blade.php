@@ -1,10 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.app_landing')
 
 @section('htmlheader_title')
-	Home
+	CLub peru
 @endsection
 
-
+@include('layouts.partials.slider')
+@include('layouts.partials.sports')
+@include('layouts.partials.aliados')
 @section('main-content')
 	<div class="container spark-screen">
 		<div class="row">
@@ -13,7 +15,7 @@
 					<div class="panel-heading">Home</div>
 
 					<div class="panel-body">
-						Aca2222
+						Aca222
 					</div>
 				</div>
 			</div>
