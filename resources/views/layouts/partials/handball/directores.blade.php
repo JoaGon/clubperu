@@ -1,4 +1,4 @@
-   <div class="tm-bottom-b-box tm-full-width  " style="    background-color: white;">
+   <div  ng-app="Handball" ng-controller="HandballController"  class="tm-bottom-b-box tm-full-width  " style="    background-color: white;">
             <div class="uk-container uk-container-center">
                   <div class="uk-panel" style="min-height: 500px;">
                         <div class="trainers-module tm-trainers-slider ">
@@ -12,25 +12,6 @@
                                         <h3>Trainers</h3>
                                     </div>
                                     <ul class="uk-grid uk-slideset uk-grid-width-1-1">
-                                        <li class="" style="display: none;">
-                                            <div class="img-wrap"><img width="400" src="img/deportes/baloncesto.jpg" alt="">
-                                            </div>
-                                            <div class="name" style="color: ">Rosana <span>Torres</span>
-                                            </div>
-                                            <div class="name2"> Nivel de Educacion: Loremp Ipsum</div>
-                                            <div class="email"> Email:test@gmail.com</div>
-                                            <div class="phone"> Telefono: 555 555 555</div>
-                                        </li>
-                                        <li style="" class="uk-active">
-                                            <div class="img-wrap"><img width="400" src="img/deportes/handball.jpg" alt="">
-                                            </div>
-                                            <div class="name">Tito <span>Pena</span>
-                                            </div>
-                                            <div class="name2"> Nivel de Educacion: Loremp Ipsum</div>
-                                            <div class="email"> Email:test@gmail.com</div>
-                                            <div class="phone"> Telefono: 555 555 555</div>
-
-                                        </li>
                                        
                                     </ul>
                                 </div>

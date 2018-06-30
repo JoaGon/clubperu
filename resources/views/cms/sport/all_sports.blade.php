@@ -7,13 +7,14 @@
 
 @section('main-content')
 
+
     <section class="content">
         <div class="row">
        
              <div class="row col-lg-12" style="margin: 15px">
                 <div class="box box-info"  style="margin-top: 5%;">
                    <div class="box-header with-border ">
-                        <h3 class="box-title">Mis Campa&ntilde;as</h3>
+                        <h3 class="box-title">Deportes</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                             <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
@@ -41,30 +42,30 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                 @foreach($slides as $slide)
+                                 @foreach($sports as $sport)
                                     <tr>
                                     
                                         <td>
-                                            {{$slide->id_header_pictures}}
+                                            {{$sport->id_sport}}
                                         </td>
                                         <td>
-                                            {{$slide->activity_id}}
+                                            {{$sport->name_sport}}
                                         </td>
                                         <td>
                                            
                                             <div style="padding-bottom: 20px;color: white;padding-top: 10px; font-size: 20px;font-weight: bold;text-align: center;">
-                                                <a class="col-xs-12 col-sm-3 col-md-3" ng-click="edit({{$slide->id_header_pictures}})"> 
-                                                    <img src=" {{$slide->picture}}" width="40" height="40">
+                                                <a class="col-xs-12 col-sm-3 col-md-3" ng-click="edit({{$sport->id_sport}})"> 
+                                                    <img src=" {{$sport->picture}}" width="40" height="40">
                                                 </a>
                                             </div>
                                         </td>
                                         <td class="childTd" style="width: 15%;">
                                             <div style="padding-bottom: 20px;color: white;padding-top: 10px; font-size: 20px;font-weight: bold;text-align: center;">
-                                                <a class="col-xs-12 col-sm-3 col-md-3" id="try" data-link="{{ url('/edit_slide') }}" onclick="edit({{$slide->id_header_pictures}})"> 
+                                                <a class="col-xs-12 col-sm-3 col-md-3" id="try" data-link="{{ url('/edit_slide') }}" onclick="edit({{$sport->id_sport}})"> 
                                                     <i class="fa fa-edit pull-right delete" style="font-family: FontAwesome !important;width: 20%;">
                                                     </i>
                                                 </a>
-                                                <a class="col-xs-12 col-sm-3 col-md-3" onclick="remove({{$slide->id_header_pictures}})"> 
+                                                <a class="col-xs-12 col-sm-3 col-md-3" onclick="remove({{$sport->id_sport}})"> 
                                                     <i class="fa fa-trash-o pull-right delete" style="font-family: FontAwesome !important;width: 20%;">
                                                     </i>
                                                 </a>  

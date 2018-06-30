@@ -4,11 +4,11 @@
 	CLub peru
 @endsection
 
-@include('layouts.partials.handball.cabecera-handball')
+@include('layouts.partials.ajedrez.cabecera_ajedrez')
 
 
 @section('main-content')
-<div   ng-app="Handball" ng-controller="HandballController" >
+<div   ng-app="Ajedrez" ng-controller="AjedrezController" >
  <div class="uk-width-1-1 uk-row-first">
 	<div class="uk-panel">
 

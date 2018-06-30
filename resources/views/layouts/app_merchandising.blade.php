@@ -49,12 +49,6 @@ desired effect
     </section><!-- /.content -->
 
 
-            
-@include('layouts.partials.handball.directores')
-                                        
-@include('layouts.partials.handball.galeria')
-
-@include('layouts.partials.handball.sedes')
 
 </div>
 

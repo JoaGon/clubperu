@@ -38,7 +38,7 @@
                                             <ul class="uk-nav uk-nav-navbar">
                                                 <li><a href="{{ url('handball')}}">Handball</a>
                                                 </li>
-                                                <li><a href="{{ url('handball')}}">Ajedrez</a>
+                                                <li><a href="{{ url('ajedrez')}}">Ajedrez</a>
                                                 </li>
                                             </ul>
                                         </div>

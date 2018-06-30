@@ -1,10 +1,10 @@
-angular.module("Handball", [], function($interpolateProvider) {
+angular.module("Ajedrez", [], function($interpolateProvider) {
         $interpolateProvider.startSymbol('[[');
         $interpolateProvider.endSymbol(']]');
     })
-    .controller("HandballController", function($scope, $http, $timeout, $q) {
+    .controller("AjedrezController", function($scope, $http, $timeout, $q) {
 
-        console.log('cacac')
+        console.log('cacac', info_sport)
   
         $ ('<div class="item active" style="height: 600px; !important"><img id="image_slide" style ="height:100%;width:100%"  class="image" src="'+info_sport[0].picture_header+'"><div class="carousel-caption"></div> </div>').appendTo('.carousel-inner');
            
