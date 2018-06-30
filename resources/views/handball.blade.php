@@ -1,4 +1,4 @@
-@extends('layouts.app_landing')
+@extends('layouts.app-sport')
 
 @section('htmlheader_title')
 	CLub peru

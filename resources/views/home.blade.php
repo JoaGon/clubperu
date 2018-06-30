@@ -13,7 +13,6 @@
 					<div class="panel-heading">Home</div>
 
 					<div class="panel-body">
-						Aca2222
 					</div>
 				</div>
 			</div>

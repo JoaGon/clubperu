@@ -30,8 +30,10 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false" class=""><a href="{{url('/')}}">Quienes somos?</a></li>
-                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#">Deportes</a>
+                            <li  class="uk-parent"  data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false" class=""><a href="{{url('/')}}">Quienes somos?</a>
+                            </li>
+
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a  href="{{url('/')}}">Deportes</a>
                                 <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
                                     <div class="uk-grid uk-dropdown-grid">
                                         <div class="uk-width-1-1">
@@ -50,17 +52,19 @@
                                     <div class="uk-grid uk-dropdown-grid">
                                         <div class="uk-width-1-1">
                                             <ul class="uk-nav uk-nav-navbar">
-                                                <li><a href="results.html">Results</a>
+                                                <li><a href="{{ url('/actividades_handball')}}">Handabll</a>
+                                                </li>
+                                                <li><a href="{{ url('/actividades_ajedrez')}}">Ajedrez</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li><a  href="{{url('/')}}">Festivales</a>
+                            <li><a  href="{{url('/merchandising')}}">Merchandising</a>
                             </li>
                            
-                            <li><a href="{{url('/')}}">DXN</a>
+                            <li><a href="{{url('/dxn')}}">DXN</a>
                             </li>
                         </ul>
                         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>

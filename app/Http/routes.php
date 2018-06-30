@@ -36,6 +36,14 @@ Route::get('/dxn', function () {
     return view('dxn');
 });
 
+Route::get('/actividades_handball', function () {
+    return view('layouts.partials.handball.actividades_handball');
+});
+
+Route::get('/actividades_ajedrez', function () {
+    return view('layouts.partials.ajedrez.actividades_ajedrez');
+});
+
 Route::get('/ajedrez', 'SportController@Ajedrez');
 
 
